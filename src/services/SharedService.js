@@ -13,10 +13,13 @@ class SharedService {
 			return SharedService.instance;
 		}
 
-		this.worker = new SharedWorker('src/workers/shared-worker.js', {
-			type: 'module',
-			name: 'tab-sync',
-		});
+		this.worker = new SharedWorker(
+			new URL('../../public/shared-worker.js', import.meta.url).href,
+			{
+				type: 'module',
+				name: 'tab-sync',
+			},
+		);
 		this.worker.port.start();
 
 		this.#listeners = new Map();

@@ -43,7 +43,6 @@ export class EmailsList {
 		</li>`;
 
 	#handleEmailsUpdate = ({ emails }) => {
-		console.log(emails);
 		this.#emails = emails;
 		this.#render();
 		// this.#root.insertAdjacentHTML(
