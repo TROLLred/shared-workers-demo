@@ -38,7 +38,7 @@ export class EmailsList {
 		`<li class="subscription__list-item">
 			<a href="mailto:${email}">${email}</a>
 			<svg>
-				<use href="/icons.svg#icon-link-arrow"></use>
+				<use href="./icons.svg#icon-link-arrow"></use>
 			</svg>
 		</li>`;
 
