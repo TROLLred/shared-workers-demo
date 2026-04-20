@@ -1,0 +1,25 @@
+:root,
+[data-theme='light'] {
+	--background: #ffffff; /* fafafa */
+	--text-primary: #171717;
+	--text-secondary: #4d4d4d;
+	--border-color: #e5e4e7;
+	--border: 1px solid var(--border-color);
+}
+
+[data-theme='dark'] {
+	--background: #16171d; /* cc */
+	--text-primary: #ffffff;
+	--text-secondary: rgba(255, 255, 255, 0.7);
+	--border-color: #3b3440;
+	--border: 1px solid var(--border-color);
+}
+
+body {
+	color: var(--text-primary);
+	background: var(--background);
+	/* transition:
+		background-color 0.3s ease-in-out,
+		border-color 0.3s ease-in-out,
+		color 0.3s ease-in-out; */
+}

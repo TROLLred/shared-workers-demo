@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="color-scheme" content="light dark" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="src/styles/index.css" rel="stylesheet" />
+		<title>AllRight Test App</title>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="header">
+			<a class="header__logo" href="https://t.me/TROLLred">TROLLred</a>
+			<div class="header__counter" id="tabs-counter">
+				Вкладки:
+				<span id="tabs-count" class="header__counter-value">1</span>
+			</div>
+		</header>
+
+		<!-- CARDS -->
+		<section class="about wrapper-ticks">
+			<div class="about__head">
+				<h1 class="about__title">Обо мне</h1>
+				<div class="about__lines"></div>
+			</div>
+			<ul class="cards-grid">
+				<li class="cards-grid__item">
+					<article class="card">
+						<div class="card__head">
+							<h3>[ 01 ] Обширный опыт</h3>
+							<p>
+								За&nbsp;более чем 5&nbsp;лет в&nbsp;IT я&nbsp;наработал самый
+								разнообразный опыт разработки начиная от&nbsp;Vanilla JS + Pug,
+								заканчивая самыми современными и&nbsp;решениями на&nbsp;React
+								и&nbsp;Vue.
+							</p>
+						</div>
+						<a
+							href="https://hh.ru/resume/9a936e6bff0f79185a0039ed1f705749387575"
+						>
+							<button>Смотреть резюме</button>
+						</a>
+					</article>
+				</li>
+				<li class="cards-grid__item">
+					<article class="card">
+						<div class="card__head">
+							<h3>[ 02 ] Командный игрок</h3>
+							<p>
+								Люблю работать в&nbsp;команде, помогать коллегам
+								и&nbsp;разбавлять повседневность юмором. Также есть опыт помощи
+								стажерам с адаптацией.
+							</p>
+						</div>
+						<a href="https://t.me/TROLLred"><button>Написать мне</button></a>
+					</article>
+				</li>
+				<li class="cards-grid__item">
+					<article class="card">
+						<div class="card__head">
+							<h3>[ 03 ] Верстка</h3>
+							<p>
+								Я&nbsp;безупречно владею всеми видами верстки, анимаций,
+								а&nbsp;также HTML, CSS, A11y, SEO и&nbsp;семантикой. Также есть
+								опыт поддержки разных браузеров, в&nbsp;том числе довольно
+								старых версий Safari.
+							</p>
+						</div>
+						<a href="https://www.mosfilm.ru/"><button>Пример</button></a>
+					</article>
+				</li>
+				<li class="cards-grid__item">
+					<article class="card">
+						<div class="card__head">
+							<h3>[ 04 ] Не боюсь Legacy</h3>
+							<p>
+								У&nbsp;меня есть опыт поддержки проектов с&nbsp;legacy без
+								документации. Я&nbsp;не&nbsp;боюсь копаться в&nbsp;старом коде
+								на&nbsp;PHP или jQuery и&nbsp;могу помочь с&nbsp;его
+								документированием и&nbsp;рефакторингом.
+							</p>
+						</div>
+						<a href="https://www.tektorg.ru/"><button>Пример</button></a>
+					</article>
+				</li>
+			</ul>
+		</section>
+
+		<!-- SUBSCRIPTION -->
+		<section class="wrapper-ticks subscription">
+			<div class="subscription__sidebar">
+				<div class="subscription__head">
+					<h2>Подписка на рассылку спама</h2>
+					<form id="subscription-form" action="" class="subscription__form">
+						<label class="subscription__input">
+							<!-- <input
+								type="email"
+								name="email"
+								autocomplete="email"
+								placeholder="example@gmail.com"
+								required
+							/> -->
+							<input
+								type="text"
+								name="email"
+								autocomplete="email"
+								placeholder="example@gmail.com"
+							/>
+							<button type="submit">Подписаться</button>
+						</label>
+						<p class="subscription__error"></p>
+					</form>
+				</div>
+			</div>
+			<ul id="emails-list" class="subscription__list">
+				<li class="subscription__list-item">
+					<a href="mailto:example@gmail.com">example@gmail.com</a>
+					<svg>
+						<use href="/icons.svg#icon-link-arrow"></use>
+					</svg>
+				</li>
+				<li class="subscription__list-item">
+					<a href="mailto:example@gmail.com">example@gmail.com</a>
+					<svg>
+						<use href="/icons.svg#icon-link-arrow"></use>
+					</svg>
+				</li>
+				<li class="subscription__list-item">
+					<a href="mailto:example@gmail.com">example@gmail.com</a>
+					<svg>
+						<use href="/icons.svg#icon-link-arrow"></use>
+					</svg>
+				</li>
+				<li class="subscription__list-item">
+					<a href="mailto:example@gmail.com">example@gmail.com</a>
+					<svg>
+						<use href="/icons.svg#icon-link-arrow"></use>
+					</svg>
+				</li>
+				<li class="subscription__list-item">
+					<a href="mailto:example@gmail.com">example@gmail.com</a>
+					<svg>
+						<use href="/icons.svg#icon-link-arrow"></use>
+					</svg>
+				</li>
+				<li class="subscription__list-item">
+					<a href="mailto:example@gmail.com">example@gmail.com</a>
+					<svg>
+						<use href="/icons.svg#icon-link-arrow"></use>
+					</svg>
+				</li>
+			</ul>
+		</section>
+
+		<!-- THEME -->
+		<section class="wrapper-ticks theme-section">
+			<div class="theme-section__head">
+				<h2>Переключатель темы</h2>
+				<p>
+					Теперь, когда меня спросят о&nbsp;самой тяжелой, крупной
+					и&nbsp;масштабной задаче, я&nbsp;наконец-то смогу заявить, что, как
+					настоящий Frontend-разработчик, покрасил ОГРОМНУЮ кнопку.
+				</p>
+				<p>*тык* *тык* *тык* *тык* *тык* *тык*</p>
+			</div>
+			<div class="theme-section__body">
+				<label id="theme-switcher" class="switch">
+					<input type="checkbox" class="switch__input" />
+					<span class="switch__slider"></span>
+				</label>
+			</div>
+		</section>
+		<script>
+			let theme = localStorage.getItem('theme');
+			document.documentElement.setAttribute('data-theme', theme || 'light');
+			if (theme && theme !== 'light')
+				document
+					.getElementById('theme-switcher')
+					.querySelector('input').outerHTML =
+					`<input checked type="checkbox" class="switch__input" />`;
+			theme = null;
+
+			document.getElementById('tabs-count').innerHTML =
+				localStorage.getItem('count') || 1;
+		</script>
+		<script type="module" src="src/main.js"></script>
+	</body>
+</html>
