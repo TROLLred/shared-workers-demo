@@ -19,7 +19,6 @@ const emails = [
 function broadcast(type, payload) {
 	tabs.forEach((_, port) => {
 		try {
-			console.log('broadcast', { type, ...payload });
 			port.postMessage({ type, ...payload });
 		} catch (e) {
 			console.error(e);
@@ -64,9 +63,10 @@ self.onconnect = function (e) {
 				break;
 			case SHARED_ON_MESSAGE_TYPES.ADD_EMAIL:
 				if (data.email && !emails.includes(data.email)) {
+					// Решил использовать массив вместо Set из-за порядка "сначала новые, затем старые"
 					emails.unshift(data.email);
 					broadcast(SHARED_POST_MESSAGE_TYPES.EMAILS_UPDATE, {
-						emails: [...emails],
+						emails,
 					});
 				}
 				break;
